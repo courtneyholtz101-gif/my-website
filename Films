@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        nav {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+            color: #ffffff;
+        }
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: left;
+            color: #ffffff;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+
+/* Carousel */
+
+        .carousel {
+            width: 380px;
+            max-width: 85%;
+            position: relative;
+            margin: 30px auto 10px;
+            background-color: #000000;
+            border: 2px solid #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .carousel-item {
+            display: none;
+            width: 100%;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+        .carousel-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+/* Film information */
+
+.film-info {
+    text-align: center;
+    padding: 18px 20px 22px;
+    background-color: #000000;
+}
+
+.film-info h2 {
+    font-family: 'Cinzel' , serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+}
+
+.film-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #cccccc;
+}
+
+/* ARROW BUTTONS */
+
+        .carousel-button {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            padding: 10px 13px;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+            background-color:rgba(0, 0, 0, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            z-index: 10;
+            transition:0.3s ease;
+        }
+        .carousel-button:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .prev {
+            left: 12px;
+        }
+        .next {
+            right: 12px;
+        }
+
+        /* Carousel dots */
+
+        .carousel-dots {
+            text-align: center;
+            margin: 15px auto 40px;
+        }
+
+        .dot {
+            display:inline-block;
+            width: 7px;
+            height: 7px;
+            margin: 0 5px;
+            background-color: #555555;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .dot.active {
+            background-color:#ffffff;
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="upcoming-projects.html">Upcoming Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="text-align: center; padding: 20px;">Our Films</h1>
+
+<div class="carousel">
+    <div class="carousel-item active">
+        <img src="Photos/addictionewposter1.jpg" alt="Film 1">
+        <div class="film-info">
+                <h2>"Addiction"</h2>
+                <p>ADDICTION is a short film directed and written by Courtney Holtz. It follows the story of Sammy who helps take in her father, Mark, after stumbling into a tumultuous battle with drugs. Will Sammy turn her back on her father, or will he finally take initiative for himself?</p>
+            </div>
+         </div>
+
+        <div class="carousel-item">
+            <img src="Photos/knock.jpg" alt="Film 2">
+            <div class="film-info">
+                <h2>"Knock"</h2>
+                <p>When Lily starts receiving strange messages from outside her home, alone at night, she begins to investigate. Is there someone after her? Or is it merely a knock at the door?</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/newpostersalsa.jpg" alt="Film 3">
+            <div class="film-info">
+                <h2>"It Takes Two To Salsa"</h2>
+                <p>Two dancers try to work out their problems before their final dance of the season.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/theneighborpost.jpg" alt="Film 4">
+            <div class="film-info">
+                <h2>"The Neighbor"</h2>
+                <p>There’s someone new in town. THE NEIGHBOR, follows the story of rookie detective, Ryan, as she meets her new neighbor, Reese. </p>
+            </div>
+    </div>
+
+        <div class="carousel-item">
+            <img src="Photos/ZepothaPoster.jpg" alt="Film 5">
+            <div class="film-info">
+                <h2>"Zepotha!"</h2>
+                <p>In the summer of 1987, four teens take a road trip to a creepy cabin in the woods of a town named Zepotha. There, they are confronted with a deranged serial killer out for revenge. Will they make it out alive, or fall to the hands of the twisted murder?</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/liar.jpg" alt="Film 6">
+            <div class="film-info">
+                <h2>"Liar!"</h2>
+                <p>A group of old friends must meet once a year to confess their sins. If anyone lies, they must find out who, or they all die.  </p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/wellberightback.jpg" alt="Film 7">
+            <div class="film-info">
+                <h2>"We'll Be Right Back"</h2>
+                <p>Actress Carrie struggles to find a role after landing commercial after commercial. One night, she lands her most bizarre role yet: the star of her own nightmares.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/TwoCanKeepASecret.png" alt="Film 8">
+            <div class="film-info">
+                <h2>"Two Can Keep A Secret"</h2>
+                <p>Will we all keep the secret?</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/LetTheCoinDecidePoster.png" alt="Film 9">
+            <div class="film-info">
+                <h2>"Let The Coin Decide"</h2>
+                <p>Heads or tails?</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="Photos/Die-FiPoster.png" alt="Film 10">
+            <div class="film-info">
+                <h2>Die-Fi</h2>
+                <p>Just give her the password.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+
+        <div class="carousel-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+            <span class="dot" onclick="goToSlide(5)"></span>
+            <span class="dot" onclick="goToSlide(6)"></span>
+            <span class="dot" onclick="goToSlide(7)"></span>
+            <span class="dot" onclick="goToSlide(8)"></span>
+            <span class="dot" onclick="goToSlide(9)"></span>
+        </div>
+
+<!-- PREVIOUS BUTTON -->
+
+        <button type="button" class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+
+<!-- NEXT BUTTON -->
+
+        <button type="button" class="carousel-button next" onclick="changeSlide(1)">&#10095 </button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.dot');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            
+            currentSlide += direction;
+            
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function goToSlide(slideNumber) {
+
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+
+            currentSlide = slideNumber;
+
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>
