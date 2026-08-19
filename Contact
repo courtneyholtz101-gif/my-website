@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+                nav {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+            color: #ffffff;
+        }
+
+        .contact {
+            max-width:700px;
+            margin: 70px auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        .contact h1 {
+            font-family: 'Cinzel' , serif;
+            font-size: 40px;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .contact-intro {
+            font-size: 19px;
+            color: #cccccc;
+            margin-bottom: 45px;
+        }
+
+        .contact-form {
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            font-family: 'Cinzel' , serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px;
+            margin-bottom: 25px;
+            background-color: #111111;
+            color: #ffffff;
+            border: 1px solid #555555;
+            border-radius: 4px;
+            font-family: 'Cormorant Garamond' , serif;
+            font-size: 17px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #ffffff;
+        }
+
+        .contact-form textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            display: block;
+            margin: 10px auto 0;
+            padding: 13px 30px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 3px;
+            font-family: 'Cinzel' , serif;
+            font-size: 14px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #cccccc;
+        }
+
+        .email {
+            margin-top: 45px;
+            font-size: 18px;
+        }
+
+        .email a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: left;
+            color: #ffffff;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            
+        }
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .success-message {
+            text-align: center;
+            padding: 40px 20px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+
+        .success-message h2 {
+            font-family: 'Cinzel' , serif;
+            font-size: 28px;
+            letter-spacing: 3px
+            margin-bottom: 15px;
+        }
+
+        .success-message p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="upcoming-projects.html">Upcoming Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact">
+
+        <h1>CONTACT</h1>
+
+        <p class="contact-intro">
+            Let's collaborate!
+        </p>
+
+        <form class="contact-form" action="https://formspree.io/f/xzepkwwj" method="POST">
+
+            <label for="name">NAME</label>
+            <input type="text" id="name" placeholder="Your name">
+
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+            <label for="subject">SUBJECT</label>
+            <input type="text" id="subject" name="subject" "What can I help you with?">
+
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+
+        </form>
+
+        <div class="email">
+            Or email me directly at
+            <a href="courtneyholtz101@gmail.com">
+                courtneyholtz101@gmail.com
+            </a>
+        </div>
+
+    </section>
+
+    <script>
+        const form = document.getElementById(contact-form);
+
+    form.addEventListener("submit") , async function(event) {
+        event.preventDefault();
+
+        const button = form.querySelector("button");
+
+        button.textContent = "SENDING...";
+        button.disabled = true;
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "ACCEPT": "application/json"
+                }
+
+                }
+            });
+
+            if (response.ok) {
+
+                form.innerHTML = `
+                    <div class="success-message">
+                        <h2>THANK YOU</h2>
+                        <p> Your message has been sent successfully.
+                            I'll get back to you as soon as possible.
+                        </p>
+            `;
+            } else {
+
+                button.textContent = "SEND MESSAGE";
+                button.disabled = false;
+
+                alert("Something went wrong. Please try again.")
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
