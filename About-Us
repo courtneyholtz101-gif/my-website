@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+                nav {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+            color: #ffffff;
+        }
+
+        .about {
+            max-width:900px;
+            margin: 60px auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        .about h1 {
+            font-family: 'Cinzel' , serif;
+            font-size: 40px;
+            letter-spacing: 4px;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            font-size: 19px;
+            line-height: 1.8;
+            color: #dddddd;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .about.text p {
+            margin-bottom: 25px;
+        }
+
+        .reel {
+            margin-top: 70px;
+        }
+
+        .reel h2 {
+            font-family: 'Cinzel' , serif;
+            font-size: 28px;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        .reel video {
+            width: 100%;
+            max-width: 850px;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: left;
+            color: #ffffff;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            
+        }
+        .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="upcoming-projects.html">Upcoming Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="about">
+
+        <h1>ABOUT ME</h1>
+
+        <div class="about-text">
+
+            <p>I started out my journey into film as a very passionate third grader. I wrote my first script, and put it on for the class. I made props, wrote the story, casted the actors, and blocked movements. This only scratched the surface. Throughout highschool I joined yearbook just to be apart of the camera team, and the editing team. I helped out with the theatre tech department in both the camera department, lighting, and audio. I taught myself video editing as well, especially during the start of the social media era. </p>
+            
+            <p>I taught myself by turning travel footage into edits, going to social media pages of companies and making fake ads for them, or just any footage I could get my hands on. Then later on I decided to go to film school. I started out online for six months, but then went in person for a year, and now am finishing up online. Within my first month in person there was a film contest for a song-writer and I decided I was going to enter. I got my new found film friends together, raised around 3,000 dollars, and had the finished product out within a month for this specific contest we found.</p>
+
+            <p>While in film school I had set up my first LLC, Milkyway Productions. I gained more experience with video editing for social media platforms doing promotional work, as well as photo editing. During this time I was also doing federal work study for the school filming and editing classroom instructional videos, events, and social media content.</p>
+
+            <p>I have continously worked as a cinematographer and video editor for my own and other people's short films. I'm also working on my own very virst feature film, "Chase's Dollhouse" and am very excited for it to premiere. Please don't hesitate to reach out for any film inquiries, whether that be cinematography, video editing, writing, or producing.</p>
+
+        </div>
+
+        <div class="reel">
+
+            <h2>FILM REEL</h2>
+
+            <video controls>
+                <source src="Videos/video/filmreel.mp4" type="video/mp4">
+            </video>
+
+            <p class="reel-description">
+                My work as a cinematographer, video editor, and writer.  
+            </p>
+
+        </div>
+    </section>
+
+</body>
+</html>
