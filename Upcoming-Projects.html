@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming Projects</title>
-</head>
-<style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
         body {
             font-family: 'Cormorant Garamond', serif;
@@ -14,7 +13,7 @@
             background-color: #000000;
             color: #ffffff;
         }
-                nav {
+        nav {
             background-color: #000000;
             overflow: hidden;
         }
@@ -48,14 +47,13 @@
             max-width: 100%;
             height: auto;
             vertical-align: middle;
-            
         }
         .logo-container {
             position: relative;
             display: inline-block;
         }
 
-/* Carousel */
+        /* Carousel */
 
         .carousel {
             width: 380px;
@@ -80,30 +78,30 @@
             height: auto;
         }
 
-/* Film information */
+        /* Film information */
 
-.film-info {
-    text-align: center;
-    padding: 18px 20px 22px;
-    background-color: #000000;
-}
+        .film-info {
+            text-align: center;
+            padding: 18px 20px 22px;
+            background-color: #000000;
+        }
 
-.film-info h2 {
-    font-family: 'Cinzel' , serif;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin: 0 0 8px;
-}
+        .film-info h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin: 0 0 8px;
+        }
 
-.film-info p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    color: #cccccc;
-}
+        .film-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            color: #cccccc;
+        }
 
-/* ARROW BUTTONS */
+        /* ARROW BUTTONS */
 
         .carousel-button {
             cursor: pointer;
@@ -114,11 +112,11 @@
             color: white;
             font-weight: bold;
             font-size: 22px;
-            background-color:rgba(0, 0, 0, 0.65);
+            background-color: rgba(0, 0, 0, 0.65);
             border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 50%;
             z-index: 10;
-            transition:0.3s ease;
+            transition: 0.3s ease;
         }
         .carousel-button:hover {
             background-color: rgba(255, 255, 255, 0.15);
@@ -138,7 +136,7 @@
         }
 
         .dot {
-            display:inline-block;
+            display: inline-block;
             width: 7px;
             height: 7px;
             margin: 0 5px;
@@ -149,11 +147,11 @@
         }
 
         .dot.active {
-            background-color:#ffffff;
+            background-color: #ffffff;
             transform: scale(1.3);
         }
     </style>
-</style>
+</head>
 
 <body>
     <nav>
@@ -168,14 +166,14 @@
 
     <h1 style="text-align: center; padding: 20px;">Upcoming Projects</h1>
 
-<div class="carousel">
-    <div class="carousel-item active">
-        <img src="Photos/watchthis!poster.png" alt="Film 1">
-        <div class="film-info">
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="Photos/watchthis!poster.png" alt="Film 1">
+            <div class="film-info">
                 <h2>"Watch This!"</h2>
                 <p>Is it really a livestream?</p>
             </div>
-         </div>
+        </div>
 
         <div class="carousel-item">
             <img src="Photos/iateamanposter.png" alt="Film 2">
@@ -199,7 +197,7 @@
                 <h2>"Out Of Time"</h2>
                 <p>As the time ticks down on air, what truth will get exposed?</p>
             </div>
-    </div>
+        </div>
 
         <div class="carousel-item">
             <img src="Photos/mindgamesposter.png" alt="Film 5">
@@ -226,7 +224,7 @@
         </div>
 
         <div class="carousel-dots">
-            <span class="dot active" onclick="goToSlide(0)"></span></span>
+            <span class="dot active" onclick="goToSlide(0)"></span>
             <span class="dot" onclick="goToSlide(1)"></span>
             <span class="dot" onclick="goToSlide(2)"></span>
             <span class="dot" onclick="goToSlide(3)"></span>
@@ -236,13 +234,11 @@
             <span class="dot" onclick="goToSlide(7)"></span>
         </div>
 
-<!-- PREVIOUS BUTTON -->
-
+        <!-- PREVIOUS BUTTON -->
         <button type="button" class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
 
-<!-- NEXT BUTTON -->
-
-        <button type="button" class="carousel-button next" onclick="changeSlide(1)">&#10095 </button>
+        <!-- NEXT BUTTON -->
+        <button type="button" class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
     </div>
 
     <script>
@@ -269,7 +265,6 @@
         }
 
         function goToSlide(slideNumber) {
-
             slides[currentSlide].classList.remove('active');
             dots[currentSlide].classList.remove('active');
 
